@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -13,11 +13,11 @@ export default function LandingPage() {
         <Image
           src="/hero.jpg"
           alt="Hero Background"
-          fill
+          layout='fill'
           className="opacity-50 object-cover"
         />
         <h2 className="text-4xl font-bold mb-4 text-white relative z-10">
-          Velkomin/n til Fanntófells
+          Velkomin til Fanntófells
         </h2>
         <p className="text-lg text-gray-200 mb-6 relative z-10">
           Við höfum sérhæft okkur í framleiðslu á hágæða borðplötum og
@@ -131,7 +131,7 @@ export default function LandingPage() {
           ].map((testimonial, index) => (
             <Card key={index} className="p-4 shadow-md">
               <CardContent className="text-center">
-                <p className="text-gray-600">"{testimonial}"</p>
+                <p className="text-gray-600">{testimonial}</p>
                 <h4 className="text-sm text-gray-500 mt-2">
                   - Satisfied Customer
                 </h4>

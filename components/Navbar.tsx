@@ -10,9 +10,8 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from './ui/navigation-menu';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
